@@ -81,6 +81,8 @@
 (windmove-default-keybindings)
 
 (after! centaur-tabs
+  (setq uniquify-separator "/")
+  (setq uniquify-buffer-name-style 'forward)
   (centaur-tabs-group-by-projectile-project)
   (global-set-key [M-s-left] 'centaur-tabs-backward)
   (global-set-key [M-s-right] 'centaur-tabs-forward)
