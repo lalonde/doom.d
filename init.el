@@ -110,7 +110,7 @@
        ;; https://github.com/emacs-tree-sitter/tree-sitter-langs/pull/157
        ;; issue that led me to above https://github.com/syl20bnr/spacemacs/issues/16136
        ;; Re-add +tree-sitter to go
-       ;; tree-sitter      ; TODO: reenable  ; syntax and parsing, sitting in a tree...
+       tree-sitter      ; TODO: reenable  ; syntax and parsing, sitting in a tree...
        ;;upload            ; map local to remote projects via ssh/ftp
 
        :os
@@ -140,7 +140,7 @@
        ;;fsharp            ; ML stands for Microsoft's Language
        ;;fstar             ; (dependent) types and (monadic) effects and Z3
        ;;gdscript          ; the language you waited for
-       (go +lsp)         ; the hipster dialect
+       (go +lsp +tree-sitter)         ; the hipster dialect
        ;;(graphql +lsp)    ; Give queries a REST
        ;;(haskell +lsp)    ; a language that's lazier than I am
        ;;hy                ; readability of scheme w/ speed of python
@@ -178,7 +178,7 @@
        ;;swift             ; who asked for emoji variables?
        ;;terra             ; Earth and Moon in alignment for performance.
        ;;web               ; the tubes
-       ;;yaml              ; JSON, but readable
+       yaml              ; JSON, but readable
        ;;zig               ; C, but simpler
 
        :email
