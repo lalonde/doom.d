@@ -35,7 +35,7 @@
        (emoji +unicode)  ; 🙂
        hl-todo           ; highlight TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW
        ;;indent-guides     ; highlighted indent columns
-       ;;ligatures         ; ligatures and symbols to make your code pretty again
+       (ligatures +iosevka)         ; ligatures and symbols to make your code pretty again
        ;;minimap           ; show a map of the code on the side
        modeline          ; snazzy, Atom-inspired modeline, plus API
        ;;nav-flash         ; blink cursor line after big motions
@@ -105,12 +105,12 @@
        ;;taskrunner        ; taskrunner for all your projects
        ;;terraform         ; infrastructure as code
        ;;tmux              ; an API for interacting with tmux
-       ;; TOOD: re-enable tree-sitter when the following are resolved
+       ;; DONE: re-enable tree-sitter when the following are resolved
        ;; https://github.com/emacs-tree-sitter/tree-sitter-langs/issues/144
        ;; https://github.com/emacs-tree-sitter/tree-sitter-langs/pull/157
        ;; issue that led me to above https://github.com/syl20bnr/spacemacs/issues/16136
        ;; Re-add +tree-sitter to go
-       tree-sitter      ; TODO: reenable  ; syntax and parsing, sitting in a tree...
+       tree-sitter         ; syntax and parsing, sitting in a tree...
        ;;upload            ; map local to remote projects via ssh/ftp
 
        :os
