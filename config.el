@@ -21,8 +21,15 @@
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
-(setq doom-font (font-spec :family "Iosevka" :size 14 :weight 'regular :width 'expanded)
-      doom-variable-pitch-font (font-spec :family "Helvetica" :size 14))
+
+(cond ;;using cond so we can go down a list eventually
+ ((find-font (font-spec :family "Iosevka"))
+  (setq doom-font (font-spec :family "Iosevka" :size 16 :weight 'bold :width 'expanded))))
+
+(cond ;;using cond so we can go down a list eventually
+ ((find-font (font-spec :family "Helvetica"))
+  (setq doom-variable-pitch-font (font-spec :family "Helvetica" :size 14))))
+
 ;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
 ;; up, `M-x eval-region' to execute elisp code, and 'M-x doom/reload-font' to
